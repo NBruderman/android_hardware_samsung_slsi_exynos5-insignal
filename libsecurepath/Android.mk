@@ -21,9 +21,13 @@ LOCAL_PATH := $(call my-dir)
 # libcsecurepath.a
 
 include $(CLEAR_VARS)
+
 LOCAL_MODULE := libsecurepath
+
 BUILD_DATE := \"`date '+%Y.%m.%d'`\"
+
 LOCAL_CPPFLAGS := -Wall -D_BUILD_DATE=$(BUILD_DATE)
+
 LOCAL_SRC_FILES	+= 	\
 	tlc_communication.cpp \
 	content_protect.cpp \

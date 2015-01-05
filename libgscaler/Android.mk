@@ -15,6 +15,7 @@
 ifeq ($(filter-out exynos5,$(TARGET_BOARD_PLATFORM)),)
 
 LOCAL_PATH:= $(call my-dir)
+
 include $(CLEAR_VARS)
 
 LOCAL_PRELINK_MODULE := false
@@ -48,6 +49,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_MODULE_TAGS := eng
 LOCAL_MODULE := libexynosgscaler
+
 include $(BUILD_SHARED_LIBRARY)
 
 endif

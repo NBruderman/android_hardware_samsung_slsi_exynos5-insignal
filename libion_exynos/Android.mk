@@ -13,6 +13,7 @@
 # limitations under the License.
 
 LOCAL_PATH:= $(call my-dir)
+
 include $(CLEAR_VARS)
 
 # HAL module implemenation stored in

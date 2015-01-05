@@ -20,6 +20,7 @@ LOCAL_PATH:= $(call my-dir)
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.product.board>.so
 
 include $(CLEAR_VARS)
+
 LOCAL_PRELINK_MODULE := false
 LOCAL_SHARED_LIBRARIES := liblog libcutils libhardware_legacy libutils libbinder libexynosv4l2
 LOCAL_CFLAGS += -DLOG_TAG=\"HWCService\"
@@ -65,6 +66,7 @@ endif
 
 LOCAL_MODULE := libExynosHWCService
 LOCAL_MODULE_TAGS := optional
+
 include $(BUILD_SHARED_LIBRARY)
 
 endif

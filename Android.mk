@@ -30,10 +30,10 @@ exynos5_dirs := \
 
 ifeq ($(BOARD_TV_PRIMARY),true)
 exynos5_dirs += \
-       libhwc_tvprimary
+	libhwc_tvprimary
 else
 exynos5_dirs += \
-       libhwc
+	libhwc
 endif
 
 ifeq ($(BOARD_USES_SCALER),true)
