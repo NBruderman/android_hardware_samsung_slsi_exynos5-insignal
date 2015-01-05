@@ -19,6 +19,7 @@ LOCAL_PATH := $(call my-dir)
 
 ###############################################################################
 # libcsecurepath.a
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsecurepath
 BUILD_DATE := \"`date '+%Y.%m.%d'`\"
