@@ -21,7 +21,7 @@ endif
 	
 LOCAL_C_INCLUDES := \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
-	$(LOCAL_PATH)/include \
+	$(LOCAL_PATH)/../include \
 	$(TOP)/hardware/samsung_slsi/exynos/include
 
 LOCAL_ADDITIONAL_DEPENDENCIES := \
