@@ -16,6 +16,7 @@
 #
 
 ifeq ($(TARGET_BOARD_PLATFORM),exynos5)
+
 ifeq ($(TARGET_SLSI_VARIANT),insignal)
 
 exynos5_dirs := \
@@ -27,7 +28,7 @@ exynos5_dirs := \
 	libkeymaster \
 	libsecurepath
 
-ifeq ($(BOARD_TV_PRIMARY), true)
+ifeq ($(BOARD_TV_PRIMARY),true)
 exynos5_dirs += \
        libhwc_tvprimary
 else
@@ -35,7 +36,7 @@ exynos5_dirs += \
        libhwc
 endif
 
-ifeq ($(BOARD_USES_SCALER), true)
+ifeq ($(BOARD_USES_SCALER),true)
 exynos5_dirs += \
 	libscaler
 endif
@@ -43,4 +44,5 @@ endif
 include $(call all-named-subdir-makefiles,$(exynos5_dirs))
 
 endif
+
 endif

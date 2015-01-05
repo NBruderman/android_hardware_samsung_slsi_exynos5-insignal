@@ -36,12 +36,12 @@ LOCAL_C_INCLUDES := \
 LOCAL_ADDITIONAL_DEPENDENCIES := \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
-ifeq ($(BOARD_TV_PRIMARY), true)
+ifeq ($(BOARD_TV_PRIMARY),true)
 LOCAL_C_INCLUDES += \
-       $(LOCAL_PATH)/../libhwc_tvprimary
+	$(LOCAL_PATH)/../libhwc_tvprimary
 else
 LOCAL_C_INCLUDES += \
-       $(LOCAL_PATH)/../libhwc
+	$(LOCAL_PATH)/../libhwc
 endif
 
 LOCAL_SRC_FILES := ExynosHWCService.cpp IExynosHWC.cpp

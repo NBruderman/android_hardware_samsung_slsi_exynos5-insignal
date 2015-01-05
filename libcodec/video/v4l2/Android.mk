@@ -2,12 +2,12 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
-ifeq ($(BOARD_USE_DUALDPB_MODE), true)
-LOCAL_CFLAGS += -DUSE_DUALDPB_MODE
+ifeq ($(BOARD_USE_DUALDPB_MODE),true)
+	LOCAL_CFLAGS += -DUSE_DUALDPB_MODE
 endif
 
-ifeq ($(BOARD_USE_VP8ENC_SUPPORT), true)
-LOCAL_CFLAGS += -DUSE_VP8ENC_SUPPORT
+ifeq ($(BOARD_USE_VP8ENC_SUPPORT),true)
+	LOCAL_CFLAGS += -DUSE_VP8ENC_SUPPORT
 endif
 
 LOCAL_SRC_FILES := \
@@ -19,13 +19,13 @@ LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/include \
 	$(TOP)/hardware/samsung_slsi/exynos/include
 
-LOCAL_ADDITIONAL_DEPENDENCIES += \
+LOCAL_ADDITIONAL_DEPENDENCIES := \
 	$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
-ifeq ($(BOARD_USE_KHRONOS_OMX_HEADER), true)
-LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi/openmax/include/khronos
+ifeq ($(BOARD_USE_KHRONOS_OMX_HEADER),true)
+	LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi/openmax/include/khronos
 else
-LOCAL_C_INCLUDES += $(TOP)/frameworks/native/include/media/openmax
+	LOCAL_C_INCLUDES += $(TOP)/frameworks/native/include/media/openmax
 endif
 
 LOCAL_MODULE := libExynosVideoApi

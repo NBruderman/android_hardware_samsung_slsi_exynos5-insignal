@@ -14,7 +14,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-
 include $(CLEAR_VARS)
 
 MOBICORE_PATH := hardware/samsung_slsi/exynos5/mobicore

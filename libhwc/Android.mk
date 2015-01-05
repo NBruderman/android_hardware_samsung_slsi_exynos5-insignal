@@ -55,7 +55,7 @@ ifeq ($(BOARD_USES_VFB),true)
 	LOCAL_CFLAGS += -DUSES_VFB
 endif
 
-ifeq ($(BOARD_HDMI_INCAPABLE), true)
+ifeq ($(BOARD_HDMI_INCAPABLE),true)
 	LOCAL_CFLAGS += -DHDMI_INCAPABLE
 endif
 
