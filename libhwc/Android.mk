@@ -13,6 +13,7 @@
 # limitations under the License.
 
 LOCAL_PATH:= $(call my-dir)
+
 # HAL module implemenation, not prelinked and stored in
 # hw/<COPYPIX_HARDWARE_MODULE_ID>.<ro.product.board>.so
 

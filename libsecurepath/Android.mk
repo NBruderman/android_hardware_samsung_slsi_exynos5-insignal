@@ -17,7 +17,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-
 ###############################################################################
 # libcsecurepath.a
 include $(CLEAR_VARS)

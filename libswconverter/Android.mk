@@ -14,9 +14,9 @@ LOCAL_SRC_FILES := \
 	csc_ARGB8888_to_ABGR8888.s
 
 ifeq ($(BOARD_USE_KHRONOS_OMX_HEADER),true)
-LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi/openmax/include/khronos
+	LOCAL_C_INCLUDES += $(TOP)/hardware/samsung_slsi/openmax/include/khronos
 else
-LOCAL_C_INCLUDES += $(TOP)/frameworks/native/include/media/openmax
+	LOCAL_C_INCLUDES += $(TOP)/frameworks/native/include/media/openmax
 endif
 	
 LOCAL_C_INCLUDES := \
